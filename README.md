@@ -7,5 +7,5 @@ It can also be passed parameters for either of those three items. If any item is
 
 Parameters are:
 -five9Username
--five9UserPass
+-five9Userpass
 -logoutUsername
