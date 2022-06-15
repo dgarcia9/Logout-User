@@ -1,4 +1,4 @@
-﻿param ($five9Username, $five9UserPass, $logoutUsername)
+param ($five9Username, $five9Userpass, $logoutUsername)
 [void][Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic')
 
 Function GetFive9Username {
@@ -251,8 +251,8 @@ if (!$five9Username) {
     $five9Username = GetFive9Username
 }
 
-if (!$five9UserPass) {
-    $five9UserPass = GetFive9Password
+if (!$five9Userpass) {
+    $five9Userpass = GetFive9Password
 }
 
 
@@ -260,7 +260,7 @@ if (!$logoutUsername) {
     $logoutUsername = GetUser
 }
 
-$userId, $tokenId, $farmId, $orgId = Login ($five9Username) ($five9UserPass)
+$userId, $tokenId, $farmId, $orgId = Login ($five9Username) ($five9Userpass)
 
 
 $state = CheckState ($userId) ($tokenId) ($farmId)
